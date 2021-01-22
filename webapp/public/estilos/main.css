@@ -10,3 +10,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
 }
+
+.btn-card {
+    width: 100px;
+}
+
+.icono {
+    color: #5e5e5e;
+    cursor: pointer;
+}
+
+.icono:hover {
+    color: dodgerblue;
+}
