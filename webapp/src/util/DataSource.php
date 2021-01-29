@@ -8,10 +8,10 @@ class DataSource {
 
     public static function getConnection() {
         try {
-            $conexion = new PDO('mysql:host=localhost;dbname=matricula','root','');
+            $conexion = new PDO('mysql:host=localhost;dbname=matricula','root','12345');
             return $conexion;
         } catch(PDOException $e) {
-            // TODO: Implementar manejo de excepción
+            Config::getLogger()->error($e->getMessage());
             throw $e;
         }
     }
